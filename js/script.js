@@ -41,3 +41,45 @@ const swiper1 = new Swiper('#main_view', {
     
 
   });
+
+
+const sponsor_list = new Swiper('#sponsor_list',{
+  wrapperClass:'list',
+  slideClass:'item',
+  slidesPerView: 7,
+});
+//sponsor
+const sponsor = new Swiper('#sponsor', {
+  // Optional parameters
+  wrapperClass:'sponsor_box',
+  slideClass:'sponsor_icon',
+  loop:true,
+  slidesPerView: 3,
+  centeredSlides: true,
+  initialSlide: 0,
+  spaceBetween:30,
+
+  /*
+  autoplay: { //자동슬라이드
+    delay: 2000, //하나의 슬라이드가 보여주는 시간
+  },
+  speed:800, //슬라이드가 전환되는(움직이는) 시간
+  */
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  pagination: {
+    el: ".sponsor_bar",
+    type: "progressbar",
+  },
+  thumbs: {
+    swiper: sponsor_list,
+    slideThumbActiveClass:'active'
+  },
+
+
+});

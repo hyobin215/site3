@@ -566,6 +566,7 @@ main #campaign .cp_box .c_box img {
 }
 main #campaign .cp_box li {
   cursor: pointer;
+  margin-bottom: 44px;
 }
 main #campaign .cp_box .c_text p {
   font-size: 18px;
@@ -580,4 +581,193 @@ main #campaign .cp_box .c_text h4 {
   color: #222222;
   margin-left: 25px;
   margin-top: 14px;
+}
+main #sponsor {
+  max-width: 1364px;
+  margin: 0 auto 100px;
+  overflow: hidden;
+  padding: 0 80px;
+  position: relative;
+}
+main #sponsor h2 {
+  margin-top: 160px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 40px;
+  font-family: Pretendard-Bold;
+  margin-bottom: 65px;
+}
+main #sponsor h2 span {
+  color: #869F30;
+}
+main #sponsor p {
+  font-size: 23px;
+}
+main #sponsor .sponsor_box p:last-child {
+  font-size: 18px;
+  color: #4c4c4c !important;
+  line-height: 1.4;
+  padding-top: 10px;
+  white-space: nowrap;
+}
+main #sponsor .sponsor_icon {
+  transition: all 0.4s ease-in-out;
+}
+main #sponsor ul {
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  font-weight: 600;
+}
+main #sponsor li {
+  display: inline-block;
+  font-size: 15px;
+  color: #5A5555;
+  flex-shrink: 0;
+}
+main #sponsor img {
+  width: 164px;
+  height: 148px;
+  object-fit: contain;
+  object-position: center center;
+}
+main #sponsor .sponsor_box .sponsor_icon {
+  opacity: 0;
+}
+main #sponsor .sponsor_box .swiper-slide-prev {
+  opacity: 1;
+}
+main #sponsor .sponsor_box .swiper-slide-prev img {
+  opacity: 0;
+}
+main #sponsor .sponsor_box .swiper-slide-active {
+  color: #A3B858;
+  opacity: 1;
+}
+main #sponsor .sponsor_box .swiper-slide-active img {
+  animation: opacity_visible 0.8s;
+}
+main #sponsor .sponsor_box .swiper-slide-active p {
+  padding-top: 20px;
+}
+main #sponsor .sponsor_box .swiper-slide-next {
+  opacity: 1;
+}
+main #sponsor .sponsor_box .swiper-slide-next img {
+  opacity: 0;
+}
+@keyframes opacity_visible {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+main #sponsor .swiper-button-next {
+  color: #666;
+  position: absolute;
+  top: 400px;
+  right: 0px;
+}
+main #sponsor .swiper-button-prev {
+  color: #666;
+  position: absolute;
+  top: 400px;
+  left: 0px;
+}
+main #sponsor .sponsor_bar {
+  width: 100%;
+  margin: 0 auto;
+  height: 4px;
+  background: #BFBFBF;
+  overflow: hidden;
+  margin-top: 80px;
+}
+main #sponsor .sponsor_bar .swiper-slide-active {
+  color: #A3B858;
+}
+main #sponsor .sponsor_bar span {
+  width: 100%;
+  height: 4px;
+  background: #A3B858;
+  display: block;
+  transform-origin: left center;
+}
+main #sponsor #sponsor_list .list {
+  margin-top: 15px;
+}
+main #sponsor #sponsor_list p {
+  font-size: 17px;
+}
+main #sponsor #sponsor_list .active {
+  color: #A3B858;
+}
+main #notice h2 {
+  font-size: 38px;
+  font-family: Pretendard-Bold;
+  padding-top: 167px;
+}
+main #notice .n_buttons li {
+  display: inline-block;
+  font-size: 24px;
+  font-family: Pretendard-Medium;
+  margin-top: 50px;
+}
+main #notice .n_buttons .b_1 {
+  background: #869F30;
+  color: #fff;
+  padding: 11px 26px;
+  border-radius: 20px;
+  margin-right: 16px;
+  margin-bottom: 49px;
+}
+main #notice .n_buttons .b_2 {
+  background: #869F30;
+  color: #fff;
+  padding: 11px 26px;
+  border-radius: 20px;
+  margin-right: 16px;
+}
+main #notice .n_buttons .b_3 {
+  background: #869F30;
+  color: #fff;
+  padding: 11px 26px;
+  border-radius: 20px;
+}
+main #notice .n_content {
+  cursor: pointer;
+}
+main #notice .n_content .n_box {
+  width: 1363px;
+  height: 110px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  background: #fff;
+}
+main #notice .n_content li {
+  margin-bottom: 20px;
+  line-height: 110px;
+}
+main #notice .n_content .nc {
+  font-size: 20px;
+  margin-right: 47px;
+  float: left;
+  margin-left: 36px;
+  font-family: Pretendard-Medium;
+  color: #869F30;
+}
+main #notice .n_content h3 {
+  float: left;
+  font-size: 22px;
+  font-family: Pretendard-Medium;
+  margin-right: 705px;
+}
+main #notice .n_content p {
+  float: right;
+  color: #666666;
+  font-size: 20px;
+  font-family: Pretendard-Medium;
 }
