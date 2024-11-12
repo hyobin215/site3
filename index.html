@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!--<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">-->
 
 </head>
@@ -175,24 +175,25 @@
                     </div><!--end:.text-->
                 </article>
 
-                <div class="control">
-                    <div class="swiper-botton-prev"><img src="images/left1.png"/></div>
-                    <div class="swiper-pagination"></div> 
-                    <div class="swiper-botton-next"><img src="images/right1.png"/></div>
-                </div>  
+                
             </div><!--end:.slider-->
              
-                
+            <div class="control">
+                <div class="swiper-button-prev"><img src="images/left1.png"/></div>
+                <div class="swiper-pagination"></div> 
+                <div class="swiper-button-next"><img src="images/right1.png"/></div>
+            </div> 
                 <div class="donation-buttons">
-                    <ul>
-                        <li class="give1"><a href="#">후원하기
+                    <h3 class="give1"><a href="#">후원하기
                             <i class="xi-angle-right"></i>
-                        </a></li>
-                        <li class="give2 content1"><a href="#"><img src="images/_icon1.png"/>
+                        </a></h3>
+                    <ul>
+                        
+                        <li class="give2 content1"><a href="#"><img src="images/micon1.png"/>
                             캠페인후원</a></li>
-                        <li class="give2 content2"><a href="#"><img src="images/_icon2.png"/>
+                        <li class="give2 content2"><a href="#"><img src="images/micon2.png"/>
                             일시후원</a></li>
-                        <li class="give2 content3"><a href="#"><img src="images/_icon3.png"/>
+                        <li class="give2 content3"><a href="#"><img src="images/micon3.png"/>
                             해외결연후원</a></li>
                     </ul>
                 </div>
@@ -213,7 +214,7 @@
                         <ul class="s_item s_view">
                             <li>
                                 <div class="s_box">
-                                    <img src="images/story_1.jpg"/>
+                                    <p class="imgbox"><span class="domestic">국내</span><img src="images/story_1.jpg"/></p>
                                     <div class="story_text">
                                         <p>선택의 갈림길에서 필요한 삶의 준거</p>
                                         <h4>공존을 위한 선택 : 어떤 '가치'를 남길 것인가?</h4>
@@ -222,7 +223,7 @@
                             </li>
                             <li>
                                 <div class="s_box">
-                                    <img src="images/story_2.png"/>
+                                    <p class="imgbox"><span class="overseas">해외</span><img src="images/story_2.png"/></p>
                                     <div class="story_text">
                                         <p>에티오피아 기후위기 대응</p>
                                         <h4>굿네이버스 나무 심기 프로젝트</h4>
@@ -231,7 +232,7 @@
                             </li>
                             <li>
                                 <div class="s_box">
-                                    <img src="images/story_3.png"/>
+                                    <p class="imgbox"><span class="overseas">해외</span><img src="images/story_3.png"/></p>
                                     <div class="story_text">
                                         <p>2024 희망편지쓰기대회 주인공, 유니스</p>
                                         <h4>메마른 땅에서 피어난 탄자니아 소녀 유니스의 희망</h4>
@@ -242,7 +243,7 @@
                         <ul class="s_item s_view">
                             <li>
                                 <div class="s_box">
-                                    <img src="images/story_2.png"/>
+                                    <p class="imgbox"><span class="overseas">해외</span><img src="images/story_2.png"/></p>
                                     <div class="story_text">
                                         <p>에티오피아 기후위기 대응</p>
                                         <h4>굿네이버스 나무 심기 프로젝트</h4>
@@ -251,7 +252,7 @@
                             </li>
                             <li>
                                 <div class="s_box">
-                                    <img src="images/story_3.png"/>
+                                    <p class="imgbox"><span class="overseas">해외</span><img src="images/story_3.png"/></p>
                                     <div class="story_text">
                                         <p>2024 희망편지쓰기대회 주인공, 유니스</p>
                                         <h4>메마른 땅에서 피어난 탄자니아 소녀 유니스의 희망</h4>
@@ -260,7 +261,7 @@
                             </li>
                             <li>
                                 <div class="s_box">
-                                    <img src="images/story_1.jpg"/>
+                                    <p class="imgbox"><span class="domestic">국내</span><img src="images/story_1.jpg"/></p>
                                     <div class="story_text">
                                         <p>선택의 갈림길에서 필요한 삶의 준거</p>
                                         <h4>공존을 위한 선택 : 어떤 '가치'를 남길 것인가?</h4>
@@ -471,15 +472,17 @@
         <section id="notice"> 
             <div class="inner">
                 <h2>더 많은 소식</h2>
-                <div class="n_buttons">
-                    <ul>
-                        <li class="b_1"><a href="#">공지사항</a></li>
-                        <li class="b_2"><a href="#">나눔소식</a></li>
-                        <li class="b_3"><a href="#">언론보도</a></li>
-                    </ul>
-                </div>
+              
+                <input id="tab1" type="radio" name="tab_menu" checked/>
+                <label for="tab1">공지사항</label>
 
-                <div class="n_content">
+                <input id="tab2" type="radio" name="tab_menu"/>
+                <label for="tab2">나눔소식</label>
+
+                <input id="tab3" type="radio" name="tab_menu"/>
+                <label for="tab3">언론보도</label>
+
+                <div class="n_content" id="content1">
                     <ul>
                         <li>
                             <div class="n_box">
@@ -514,6 +517,86 @@
                                     <p class="nc">공지사항</p>
                                     <h3>[굿네이버스 학교] 2024 전북 학생 어울림한마당 미술 전시회 안내</h3>
                                     <p>2024.08.24</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="n_content" id="content2">
+                    <ul>
+                        <li>
+                            <div class="n_box">
+                                <div class="b_text">
+                                    <p class="nc">나눔소식</p>
+                                    <h3>한국증권금용 꿈나눔재단, 몽골 취약계층 청소년 직업교육 지원 사업 협약</h3>
+                                    <p>2024.10.25</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="n_box">
+                                <div class="b_text">
+                                    <p class="nc">나눔소식</p>
+                                    <h3>KB자산운용, 저소득가정'희망드림 출산응원박스' 후원금 전달식</h3>
+                                    <p>2024.10.08</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="n_box">
+                                <div class="b_text">
+                                    <p class="nc">나눔소식</p>
+                                    <h3>아름다운사람들, 위기임산부 및 영아지원 후원금 전달</h3>
+                                    <p>2024.09.03</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="n_box">
+                                <div class="b_text">
+                                    <p class="nc">나눔소식</p>
+                                    <h3>새음학교,2024 지리산 나눔 종주를 통한 위기가정아동 지원</h3>
+                                    <p>2024.08.05</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="n_content" id="content3">
+                    <ul>
+                        <li>
+                            <div class="n_box">
+                                <div class="b_text">
+                                    <p class="nc">언론보도</p>
+                                    <h3>중앙일보 / 보호대상아동부터 자립준비청년까지...생애주기별 통합적인 지원에 앞장</h3>
+                                    <p>2024.10.24</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="n_box">
+                                <div class="b_text">
+                                    <p class="nc">언론보도</p>
+                                    <h3>중앙일보 / "남편, 아프리카 1000명에 식수 주고 떠났다"...늘어난 유산기부</h3>
+                                    <p>2024.09.13</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="n_box">
+                                <div class="b_text">
+                                    <p class="nc">언론보도</p>
+                                    <h3>동아일보 / 아동 삶의 질 꾸준히 개선...지역별 격차 해결은 과제</h3>
+                                    <p>2024.08.28</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="n_box">
+                                <div class="b_text">
+                                    <p class="nc">언론보도</p>
+                                    <h3>동아일보 / 빈곤가정 돕는 의사선생님 "명의보다 '따뜻한 이웃'이고파"</h3>
+                                    <p>2024.08.12</p>
                                 </div>
                             </div>
                         </li>
