@@ -17,7 +17,7 @@ a {
 }
 
 .inner {
-  width: 1364px;
+  max-width: 1364px;
   margin: 0 auto;
 }
 
@@ -29,7 +29,6 @@ header {
 header #top_cf {
   float: right;
   margin-top: 8px;
-  margin-right: 278px;
 }
 header #top_cf li {
   display: inline-block;
@@ -53,14 +52,13 @@ header #top_cf .receipt_btn {
 }
 header #logo {
   float: left;
-  margin-left: 278px;
   margin-top: 59px;
   margin-bottom: 36px;
 }
 header #gnb {
   float: left;
-  margin-left: 110px;
   margin-top: 50px;
+  margin-left: 110px;
 }
 header #gnb li {
   float: left;
@@ -142,7 +140,6 @@ header #gnb:hover .sub_bg {
 header #search {
   float: right;
   margin-top: 23px;
-  margin-right: 278px;
 }
 header #search li {
   float: left;
@@ -178,6 +175,7 @@ header #search .give {
   }
 }
 main {
+  clear: both;
   margin-top: 10px;
 }
 main #main_view {
@@ -256,7 +254,7 @@ main #main_view .control div {
 }
 main #main_view .control .swiper-button-prev {
   position: absolute;
-  top: 0px;
+  top: -10px;
   left: -100px;
 }
 main #main_view .control .swiper-pagination {
@@ -269,7 +267,7 @@ main #main_view .control .swiper-pagination {
 }
 main #main_view .control .swiper-button-next {
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 10px;
 }
 main #main_view .donation-buttons {
@@ -278,6 +276,10 @@ main #main_view .donation-buttons {
   bottom: 0;
   z-index: 99;
   width: 100%;
+}
+main #main_view .donation-buttons img {
+  vertical-align: -13px;
+  margin-right: 10px;
 }
 main #main_view .donation-buttons ul {
   display: flex;
@@ -294,7 +296,7 @@ main #main_view .donation-buttons .give1 {
   background-color: #869F30;
   width: 30%;
   height: 127px;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 25px 25px 0;
   color: #fff;
   float: left;
 }
@@ -420,13 +422,20 @@ main #banner .main3 .b_text h2 {
   margin-bottom: 40px;
   color: #fff;
   padding-top: 52px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.4s;
 }
 main #banner .main3 .b_text h2 span {
   color: #C5E034;
+  font-family: Pretendard-Bold;
 }
 main #banner .main3 .b_text p {
   font-size: 28px;
   font-family: Pretendard-Medium;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.4s;
   color: #fff;
 }
 main #banner .main3 .b_text p span {
@@ -445,7 +454,7 @@ main #banner .main3 .button .button1 {
   border-radius: 30px;
   margin-top: 47px;
   position: absolute;
-  left: 749px;
+  right: 55%;
 }
 main #banner .main3 .button .button2 {
   background: #869F30;
@@ -454,7 +463,7 @@ main #banner .main3 .button .button2 {
   border-radius: 30px;
   margin-top: 47px;
   position: absolute;
-  right: 749px;
+  left: 55%;
 }
 main #banner .main3 .b_icon li {
   display: inline-block;
@@ -472,6 +481,15 @@ main #banner .main3 .b_icon li p {
 }
 main #banner .main3 .b_icon li:first-child {
   margin-left: 226px;
+}
+main #banner .main3.show .b_text h2 {
+  transform: translateY(0);
+  opacity: 1;
+}
+main #banner .main3.show .b_text p {
+  transform: translateY(0);
+  opacity: 1;
+  transition-delay: 0.2s;
 }
 main #banner2 {
   height: 1220px;
@@ -495,14 +513,14 @@ main #banner2 .main4 .box1 {
   position: absolute;
   left: 0;
   top: 80px;
-  background: url("../images/box2.jpg") no-repeat;
+  background: url("../images/bannerbox1.png") no-repeat;
   background-size: cover;
-  border: 1px solid #EAEAEA;
-  border-radius: 20px;
 }
 main #banner2 .main4 .box1 h3 {
   font-size: 32px;
   font-family: Pretendard-Bold;
+  color: #fff;
+  letter-spacing: 0.07em;
   margin-top: 35px;
   margin-left: 37px;
 }
@@ -512,14 +530,15 @@ main #banner2 .main4 .box2 {
   position: absolute;
   left: 675px;
   top: 80px;
-  background: url("../images/box4.jpg") no-repeat;
+  background: url("../images/bannerbox9.png") no-repeat;
   background-size: cover;
-  border-radius: 20px;
 }
 main #banner2 .main4 .box2 h4 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: Pretendard-Bold;
-  padding-top: 34px;
+  letter-spacing: 0.07em;
+  color: #fff;
+  margin-top: 35px;
   margin-left: 34px;
 }
 main #banner2 .main4 .box3 {
@@ -528,16 +547,16 @@ main #banner2 .main4 .box3 {
   position: absolute;
   left: 675px;
   top: 280px;
-  background: url("../images/box13.jpg") no-repeat;
+  background: url("../images/bannerbox3.png") no-repeat;
   background-size: cover;
-  border: 1px solid #eaeaea;
-  border-radius: 20px;
 }
 main #banner2 .main4 .box3 h4 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: Pretendard-Bold;
-  padding-top: 34px;
-  margin-left: 34px;
+  color: #fff;
+  letter-spacing: 0.07em;
+  padding-top: 35px;
+  margin-left: 38px;
 }
 main #banner2 .main4 .box4 {
   width: 326px;
@@ -545,7 +564,7 @@ main #banner2 .main4 .box4 {
   position: absolute;
   right: 0;
   top: 280px;
-  background: url("../images/box10.jpg") no-repeat;
+  background: url("../images/bannerbox4.png") no-repeat;
   background-size: cover;
   border-radius: 20px;
 }
@@ -555,16 +574,18 @@ main #banner2 .main4 .box5 {
   position: absolute;
   top: 471px;
   left: 160px;
-  background: url("../images/box12.jpg") no-repeat;
+  background: url("../images/bannerbox10.png") no-repeat;
   background-size: cover;
   border: 1px solid #eaeaea;
   border-radius: 20px;
 }
 main #banner2 .main4 .box5 h4 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: Pretendard-Bold;
-  padding-top: 34px;
-  margin-left: 293px;
+  letter-spacing: 0.07em;
+  color: #fff;
+  padding-top: 35px;
+  margin-left: 34px;
 }
 main #banner2 .main4 .box6 {
   width: 461px;
@@ -582,16 +603,16 @@ main #banner2 .main4 .box7 {
   position: absolute;
   right: 0;
   top: 490px;
-  background: url("../images/box11.jpg") no-repeat;
+  background: url("../images/bannerbox7.png") no-repeat;
   background-size: cover;
-  border: 1px solid #eaeaea;
-  border-radius: 20px;
 }
 main #banner2 .main4 .box7 h3 {
   font-size: 32px;
   font-family: Pretendard-Bold;
+  color: #fff;
+  letter-spacing: 0.07em;
   margin-top: 35px;
-  margin-left: 37px;
+  margin-left: 453px;
 }
 main #campaign {
   position: relative;
@@ -623,8 +644,12 @@ main #campaign .cp_box .c_item {
 main #campaign .cp_box .c_box {
   width: 444px;
   height: 350px;
+  overflow: hidden;
   border-radius: 20px;
   background: #fff;
+}
+main #campaign .cp_box figure {
+  overflow: hidden;
 }
 main #campaign .cp_box .c_box img {
   width: 444px;
@@ -632,6 +657,10 @@ main #campaign .cp_box .c_box img {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+main #campaign .cp_box .c_box:hover img {
+  transform: scale(1.2);
 }
 main #campaign .cp_box li {
   cursor: pointer;
@@ -667,7 +696,7 @@ main #sponsor h2 {
   margin-top: 160px;
   text-align: center;
   line-height: 1.5;
-  font-size: 40px;
+  font-size: 44px;
   font-family: Pretendard-Bold;
   margin-bottom: 65px;
 }
@@ -696,8 +725,8 @@ main #sponsor ul {
 }
 main #sponsor li {
   display: inline-block;
-  font-size: 15px;
-  color: #5A5555;
+  font-size: 18px;
+  color: #999;
   flex-shrink: 0;
 }
 main #sponsor img {
@@ -730,6 +759,9 @@ main #sponsor .sponsor_box .swiper-slide-active {
 }
 main #sponsor .sponsor_box .swiper-slide-active img {
   animation: opacity_visible 0.8s;
+}
+main #sponsor .sponsor_box .swiper-slide-active p:nth-child(2) {
+  font-size: 30px;
 }
 @keyframes opacity_visible {
   0% {
@@ -775,7 +807,7 @@ main #sponsor #sponsor_list .list {
   margin-top: 15px;
 }
 main #sponsor #sponsor_list p {
-  font-size: 17px;
+  font-size: 19px;
 }
 main #sponsor #sponsor_list .active {
   color: #A3B858;
@@ -788,7 +820,7 @@ main #notice {
 }
 main #notice::after {
   content: "";
-  height: 350px;
+  height: 420px;
   background-color: #F9F7F3;
   position: absolute;
   width: 100%;
@@ -796,7 +828,7 @@ main #notice::after {
   z-index: -1;
 }
 main #notice h2 {
-  font-size: 38px;
+  font-size: 44px;
   font-family: Pretendard-Bold;
   padding-top: 167px;
 }
@@ -806,6 +838,7 @@ main #notice input {
 main #notice label {
   display: inline-block;
   font-size: 24px;
+  cursor: pointer;
   font-family: Pretendard-Medium;
   margin-top: 50px;
   background: #cccccc;
@@ -828,6 +861,16 @@ main #notice .n_content .n_box {
   border: 1px solid #707070;
   border-radius: 10px;
   background: #fff;
+}
+main #notice .n_content .n_box:hover {
+  background: #869F30;
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+main #notice .n_content .n_box:hover .nc,
+main #notice .n_content .n_box:hover h3,
+main #notice .n_content .n_box:hover p {
+  color: #fff;
 }
 main #notice .n_content li {
   margin-bottom: 20px;
@@ -929,6 +972,10 @@ footer {
   margin: 0 auto;
   display: flex;
 }
+footer .inner {
+  position: relative;
+  height: 384px;
+}
 footer .text {
   width: 64%;
   flex-shrink: 0;
@@ -949,23 +996,25 @@ footer .footer_text2 {
   padding-top: 70px;
   float: left;
   width: 30%;
+  line-height: 1.5;
 }
 footer .footer_text3 {
   color: #66686b;
   font-size: 15px;
   clear: both;
-  padding-top: 22px;
+  float: left;
+  padding-top: 66px;
   font-family: Pretendard-Medium;
 }
 footer .footer_text3 p span {
   font-family: Pretendard-Bold;
 }
-footer .footer_right {
-  width: 36%;
-}
 footer #footer_logo {
-  text-align: right;
-  padding-top: 76px;
+  float: right;
+  padding-top: 0px;
+  position: absolute;
+  right: 0px;
+  top: 136px;
 }
 footer img {
   width: 135px;
@@ -978,7 +1027,7 @@ footer #sns {
   font-family: Pretendard-Medium;
   float: left;
   margin-top: 65px;
-  margin-left: 70px;
+  margin-left: 317px;
 }
 footer #sns img {
   width: 21px;
